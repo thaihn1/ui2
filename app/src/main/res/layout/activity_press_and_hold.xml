@@ -13,24 +13,23 @@
     tools:context="com.example.thai.ui20.press_and_hold"
     android:onClick="backToMenu">
 
+    <TextView
+        android:text="Press and Hold Screen"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:textSize="30sp"
+        android:id="@+id/textView4"
+        android:textColor="@color/dark_grey"
+        android:onClick="backToMenu"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/crossedhands"
-        android:id="@+id/imageView2"
+        android:id="@+id/hold_button"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="19dp"
-        android:onClick="day_calendar" />
-
-    <TextView
-        android:text="Press and Hold Screen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/dark_grey"
-        android:layout_marginTop="16dp"
-        android:onClick="backToMenu" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -12,51 +12,66 @@
     tools:context="com.example.thai.ui20.threebuttons"
     android:onClick="backToMenu">
 
+    <View
+        android:layout_width="3dp"
+        android:layout_height="90dp"
+        android:id="@+id/verticalview"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/crossedhands"
+        android:id="@+id/imageView5"
+        android:onClick="press_and_hold"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_toEndOf="@+id/verticalview" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/notepadpicture"
+        android:id="@+id/imageView7"
+        android:onClick="day_calendar"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/verticalview" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/heart"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/verticalview" />
+
     <TextView
         android:text="50"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/dark_grey"
         android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/imageView"
         android:layout_toStartOf="@+id/imageView" />
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/heart"
-        android:id="@+id/imageView"
-        android:layout_marginEnd="58dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/horizontalview"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/verticalview"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="BPM"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textColor="@color/dark_grey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
         android:layout_below="@+id/imageView"
-        android:layout_alignStart="@+id/imageView" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/crossedhands"
-        android:id="@+id/imageView5"
-        android:onClick="press_and_hold"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/notepadpicture"
-        android:id="@+id/imageView7"
-        android:onClick="day_calendar"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentStart="true" />
+        android:layout_toEndOf="@+id/textView2" />
 
 </RelativeLayout>
