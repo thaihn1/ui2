@@ -10,7 +10,8 @@ import android.widget.ViewFlipper;
 public class day_calendar extends WearableActivity {
 
     ViewFlipper viewFlipper;
-    private float initialX;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +20,12 @@ public class day_calendar extends WearableActivity {
         viewFlipper = (ViewFlipper) this.findViewById(R.id.viewFlipper);
         //viewFlipper.addView();
         //viewFlipper.setOnClickListener(this);
+    }
+
+    public void writeSummary(){
 
     }
+
     public void onButtonDown (View v){
         viewFlipper.setInAnimation(this, R.anim.low_to_high_enter);
         viewFlipper.setOutAnimation(this,R.anim.low_to_high_out);

@@ -29,7 +29,6 @@
         <activity android:name=".threebuttons" />
         <activity android:name=".press_and_hold" />
         <activity android:name=".day_calendar" />
-        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>
